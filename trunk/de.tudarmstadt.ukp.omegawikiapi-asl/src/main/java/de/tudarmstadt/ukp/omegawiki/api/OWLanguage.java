@@ -2,13 +2,13 @@
  * Copyright 2012
  * Ubiquitous Knowledge Processing (UKP) Lab
  * Technische Universität Darmstadt
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -17,6 +17,8 @@
  ******************************************************************************/
 package de.tudarmstadt.ukp.omegawiki.api;
 
+import java.util.HashMap;
+
 /**
  * Holds Language Constants, that are used in OW DataBase
  *
@@ -24,10 +26,9 @@ package de.tudarmstadt.ukp.omegawiki.api;
  *
  */
 public class OWLanguage {
-	static String[] langs = new String[500];
+	static HashMap<Integer, String> languageNames = new HashMap<Integer, String>();
 	public static final int  Bulgarian=84;
 	public static final int  English=85;
-
 	public static final int  French=86;
 	public static final int  Castilian=87;
 	public static final int  Russian=88;
@@ -44,11 +45,9 @@ public class OWLanguage {
 	public static final int  Finnish=99;
 	public static final int  Italian=100;
 	public static final int  German=101;
-	//langs[101]="German";
 	public static final int  Hungarian=102;
 	public static final int  Danish=103;
 	public static final int  English_United_States=104;
-	//langs[104]="English United States";
 	public static final int  Greek=105;
 	public static final int  Hebrew=106;
 	public static final int  Mandarin_simplified=107;
@@ -79,7 +78,6 @@ public class OWLanguage {
 	public static final int  Kölsch=134;
 	public static final int  Mandarin_traditional=135;
 	public static final int  English_United_Kingdom=136;
-	//langs[136]="English United Kingdom";
 	public static final int  Turkish=137;
 	public static final int  Korean=138;
 	public static final int  Khmer=139;
@@ -115,9 +113,7 @@ public class OWLanguage {
 	public static final int  Marwari=170;
 	public static final int  Sranan=171;
 	public static final int  German_Austria=172;
-//	langs[172]="German Austria";
 	public static final int  German_Switzerland=173;
-//	langs[173]="German Switzerland";
 	public static final int  Ancient_Greek=174;
 	public static final int  Mycenaean_Greek=175;
 	public static final int  Cappadocian_Greek=176;
@@ -327,17 +323,293 @@ public class OWLanguage {
 
 	public static String getName(int i)
 	{
-		langs[85]="English";
-		langs[101]="German";
-
-		langs[104]="English United States";
-
-		langs[136]="English United Kingdom";
-
-
-		langs[172]="German Austria";
-		langs[173]="German Switzerland";
-		return langs[i];
+		languageNames.put(84, "Bulgarian");
+		languageNames.put(85, "English");
+		languageNames.put(86, "French");
+		languageNames.put(87, "Castilian");
+		languageNames.put(88, "Russian");
+		languageNames.put(89, "Dutch");
+		languageNames.put(90, "Czech");
+		languageNames.put(91, "Swedish");
+		languageNames.put(92, "Slovenian");
+		languageNames.put(93, "Polish");
+		languageNames.put(94, "Portuguese");
+		languageNames.put(95, "Bokmål");
+		languageNames.put(96, "Basque");
+		languageNames.put(97, "Slovak");
+		languageNames.put(98, "Estonian");
+		languageNames.put(99, "Finnish");
+		languageNames.put(100, "Italian");
+		languageNames.put(101, "German");
+		languageNames.put(102, "Hungarian");
+		languageNames.put(103, "Danish");
+		languageNames.put(104, "English_United_States");
+		languageNames.put(105, "Greek");
+		languageNames.put(106, "Hebrew");
+		languageNames.put(107, "Mandarin_simplified");
+		languageNames.put(109, "Neapolitan");
+		languageNames.put(110, "Marathi");
+		languageNames.put(111, "Lombard");
+		languageNames.put(112, "Japanese");
+		languageNames.put(113, "Esperanto");
+		languageNames.put(114, "Piedmontese");
+		languageNames.put(115, "Venetian");
+		languageNames.put(116, "Ukrainian");
+		languageNames.put(117, "Catalan");
+		languageNames.put(118, "Ewe");
+		languageNames.put(119, "Akan");
+		languageNames.put(120, "Arabic");
+		languageNames.put(121, "Hausa_Ajami");
+		languageNames.put(122, "Hausa_Latin");
+		languageNames.put(123, "Armenian");
+		languageNames.put(124, "Georgian");
+		languageNames.put(125, "Afrikaans");
+		languageNames.put(126, "French_Canada");
+		languageNames.put(127, "French_Switzerland");
+		languageNames.put(128, "Serbian_Cyrillic_script");
+		languageNames.put(129, "Serbian_Latin_script");
+		languageNames.put(130, "Thai");
+		languageNames.put(131, "Ido");
+		languageNames.put(133, "Romanian");
+		languageNames.put(134, "Kölsch");
+		languageNames.put(135, "Mandarin_traditional");
+		languageNames.put(136, "English_United_Kingdom");
+		languageNames.put(137, "Turkish");
+		languageNames.put(138, "Korean");
+		languageNames.put(139, "Khmer");
+		languageNames.put(140, "Sicilian");
+		languageNames.put(141, "Aragonese");
+		languageNames.put(142, "Persian");
+		languageNames.put(143, "Latvian");
+		languageNames.put(144, "Vietnamese");
+		languageNames.put(145, "Swahili");
+		languageNames.put(146, "Bavarian");
+		languageNames.put(147, "Belarusian");
+		languageNames.put(148, "Kashubian");
+		languageNames.put(149, "Croatian");
+		languageNames.put(150, "Lithuanian");
+		languageNames.put(151, "Cantonese");
+		languageNames.put(152, "Tajik");
+		languageNames.put(153, "Welsh");
+		languageNames.put(154, "Bambara");
+		languageNames.put(155, "Portuguese_Brazil");
+		languageNames.put(156, "Portuguese_Portugal");
+		languageNames.put(158, "Telugu");
+		languageNames.put(159, "Gilaki");
+		languageNames.put(160, "Eastern_Mari");
+		languageNames.put(161, "Western_Mari");
+		languageNames.put(162, "Gujarati");
+		languageNames.put(163, "Hindi");
+		languageNames.put(164, "Tamil");
+		languageNames.put(165, "Indonesian");
+		languageNames.put(166, "Irish");
+		languageNames.put(167, "French_Belgium");
+		languageNames.put(168, "Limburgish");
+		languageNames.put(169, "Alemannic_German");
+		languageNames.put(170, "Marwari");
+		languageNames.put(171, "Sranan");
+		languageNames.put(172, "German_Austria");
+		languageNames.put(173, "German_Switzerland");
+		languageNames.put(174, "Ancient_Greek");
+		languageNames.put(175, "Mycenaean_Greek");
+		languageNames.put(176, "Cappadocian_Greek");
+		languageNames.put(177, "Tosk");
+		languageNames.put(178, "Gheg");
+		languageNames.put(179, "Arvanitic");
+		languageNames.put(180, "Arbëreshë_Albanian");
+		languageNames.put(181, "Kannada");
+		languageNames.put(182, "Breton");
+		languageNames.put(183, "Frisian");
+		languageNames.put(184, "Navajo");
+		languageNames.put(185, "Bengali");
+		languageNames.put(186, "Urdu");
+		languageNames.put(187, "French_France");
+		languageNames.put(188, "Nepali");
+		languageNames.put(189, "Igbo");
+		languageNames.put(190, "Ladin");
+		languageNames.put(191, "Kazakh");
+		languageNames.put(192, "Walloon");
+		languageNames.put(193, "Icelandic");
+		languageNames.put(194, "Tatar");
+		languageNames.put(195, "Asturian");
+		languageNames.put(196, "Sindhi_Arabic_script");
+		languageNames.put(197, "Sindhi_Gurumukhi_script");
+		languageNames.put(198, "Yoruba");
+		languageNames.put(199, "Galician");
+		languageNames.put(200, "Nynorsk");
+		languageNames.put(202, "Lingala");
+		languageNames.put(203, "Xhosa");
+		languageNames.put(204, "Upper_Sorbian");
+		languageNames.put(205, "Lower_Sorbian");
+		languageNames.put(206, "Tagalog");
+		languageNames.put(207, "Maltese");
+		languageNames.put(208, "Cebuano");
+		languageNames.put(209, "Macedonian");
+		languageNames.put(210, "Interlingua");
+		languageNames.put(211, "Interlingue");
+		languageNames.put(213, "Faroese");
+		languageNames.put(214, "Zulu");
+		languageNames.put(215, "Sanskrit");
+		languageNames.put(216, "Nepal_Bhasa");
+		languageNames.put(217, "Malayalam");
+		languageNames.put(218, "Flemish");
+		languageNames.put(219, "Chickasaw");
+		languageNames.put(220, "Corsican");
+		languageNames.put(221, "Volapük");
+		languageNames.put(222, "Malay");
+		languageNames.put(223, "Kabyle");
+		languageNames.put(224, "Manx");
+		languageNames.put(225, "Ossetian");
+		languageNames.put(226, "Crimean_Tatar");
+		languageNames.put(227, "Bashkir");
+		languageNames.put(228, "Cherokee");
+		languageNames.put(229, "Kyrgyz");
+		languageNames.put(230, "Kiribati");
+		languageNames.put(231, "Javanese");
+		languageNames.put(232, "Extremaduran");
+		languageNames.put(233, "Tetum");
+		languageNames.put(234, "Mirandese");
+		languageNames.put(235, "Emiliano_Romagnolo");
+		languageNames.put(236, "Wolof");
+		languageNames.put(237, "Somali");
+		languageNames.put(238, "Latin");
+		languageNames.put(239, "Novial");
+		languageNames.put(240, "Eastern_Yiddish");
+		languageNames.put(241, "Pitjantjatjara");
+		languageNames.put(242, "Lojban");
+		languageNames.put(243, "Luxembourgish");
+		languageNames.put(244, "Romansch");
+		languageNames.put(245, "Mingrelian");
+		languageNames.put(246, "Maori");
+		languageNames.put(247, "Kara_Kalpak");
+		languageNames.put(248, "Divehi");
+		languageNames.put(249, "Assamese");
+		languageNames.put(250, "Abkhaz");
+		languageNames.put(251, "Kotava");
+		languageNames.put(252, "Sundanese");
+		languageNames.put(253, "Cornish");
+		languageNames.put(254, "Pennsylvania_Deitsch");
+		languageNames.put(255, "Comorian");
+		languageNames.put(256, "Saterfriesisch");
+		languageNames.put(257, "Luganda");
+		languageNames.put(258, "Sinhala");
+		languageNames.put(259, "Bishnupriya");
+		languageNames.put(260, "Central_Kurdish");
+		languageNames.put(261, "Tigrigna");
+		languageNames.put(262, "Scottish_Gaelic");
+		languageNames.put(263, "Old_English");
+		languageNames.put(264, "Dzongkha");
+		languageNames.put(265, "Lingua_Franca_Nova");
+		languageNames.put(266, "Nhengatu");
+		languageNames.put(267, "Silesian");
+		languageNames.put(268, "Megleno_Romanian");
+		languageNames.put(269, "Ingush");
+		languageNames.put(270, "Southern_Balochi");
+		languageNames.put(271, "Erzya");
+		languageNames.put(272, "Lao");
+		languageNames.put(273, "Occitan");
+		languageNames.put(274, "Ligurian");
+		languageNames.put(275, "Burmese");
+		languageNames.put(276, "Amharic");
+		languageNames.put(277, "Moksha");
+		languageNames.put(278, "Ilokano");
+		languageNames.put(279, "Chuvash");
+		languageNames.put(280, "Samoan");
+		languageNames.put(281, "Udmurt");
+		languageNames.put(282, "Tok_Pisin");
+		languageNames.put(283, "Franco_Provençal");
+		languageNames.put(284, "Scots");
+		languageNames.put(285, "Wymysorys");
+		languageNames.put(286, "Hawaiian");
+		languageNames.put(287, "Chechen");
+		languageNames.put(288, "Bosnian");
+		languageNames.put(289, "Tongan");
+		languageNames.put(290, "Bakhtiari");
+		languageNames.put(291, "Pontic");
+		languageNames.put(292, "Egyptian_Arabic");
+		languageNames.put(293, "Picard");
+		languageNames.put(294, "South_Saami");
+		languageNames.put(295, "Võro");
+		languageNames.put(296, "Kiche");
+		languageNames.put(297, "Tabasco_Chontal");
+		languageNames.put(298, "Chol");
+		languageNames.put(299, "Chorti");
+		languageNames.put(300, "Tzeltal");
+		languageNames.put(301, "Tzotzil");
+		languageNames.put(302, "Chicomuceltec");
+		languageNames.put(303, "Huastec");
+		languageNames.put(304, "Chuj");
+		languageNames.put(305, "Tojolabal");
+		languageNames.put(306, "Jakalteko");
+		languageNames.put(307, "Kanjobal");
+		languageNames.put(308, "Akateko");
+		languageNames.put(309, "Mocho");
+		languageNames.put(310, "Awakateko");
+		languageNames.put(311, "Ixil");
+		languageNames.put(312, "Mam");
+		languageNames.put(313, "Tektiteko");
+		languageNames.put(314, "Kekchí");
+		languageNames.put(315, "Poqomam");
+		languageNames.put(316, "Poqomchi");
+		languageNames.put(317, "Kaqchikel");
+		languageNames.put(318, "Achi");
+		languageNames.put(319, "Tzutujil");
+		languageNames.put(320, "Sacapulteco");
+		languageNames.put(321, "Sipacapense");
+		languageNames.put(322, "Uspanteco");
+		languageNames.put(323, "Mopán_Maya");
+		languageNames.put(324, "Lacandon");
+		languageNames.put(325, "Yucatán_Maya");
+		languageNames.put(327, "Middle_High_German");
+		languageNames.put(328, "Old_High_German");
+		languageNames.put(329, "Mongolian");
+		languageNames.put(330, "Aceh");
+		languageNames.put(331, "Rapa_Nui");
+		languageNames.put(332, "Old_French");
+		languageNames.put(333, "Middle_French");
+		languageNames.put(334, "Haitian_Creole_French");
+		languageNames.put(335, "Church_Slavic");
+		languageNames.put(336, "Latgalian");
+		languageNames.put(337, "Aramaic_Official_Hebrew");
+		languageNames.put(338, "Aramaic_Jewish_Palestinian");
+		languageNames.put(339, "Classical_Syriac");
+		languageNames.put(340, "Jewish_Babylonian_Aramaic");
+		languageNames.put(341, "Hiligaynon");
+		languageNames.put(342, "Old_Irish");
+		languageNames.put(343, "Karachay_Balkar");
+		languageNames.put(344, "Réunion_Creole");
+		languageNames.put(345, "Benga");
+		languageNames.put(346, "Punu");
+		languageNames.put(347, "Mpongwe");
+		languageNames.put(348, "Kélé");
+		languageNames.put(349, "Chewa");
+		languageNames.put(350, "Bemba");
+		languageNames.put(351, "Umbundu");
+		languageNames.put(352, "Lunda");
+		languageNames.put(353, "Tonga");
+		languageNames.put(354, "Albanian");
+		languageNames.put(355, "Sesotho");
+		languageNames.put(356, "Kalaallisut");
+		languageNames.put(357, "Northern_Kurdish");
+		languageNames.put(358, "Kabuverdianu");
+		languageNames.put(359, "Ugaritic");
+		languageNames.put(360, "Vlax_Romani");
+		languageNames.put(361, "Classical_Armenian");
+		languageNames.put(362, "Ottoman_Turkish");
+		languageNames.put(363, "Abi");
+		languageNames.put(364, "Araki");
+		languageNames.put(365, "Bislama");
+		languageNames.put(366, "Fon");
+		languageNames.put(367, "Futunan");
+		languageNames.put(368, "International");
+		languageNames.put(369, "Holikachuk");
+		languageNames.put(370, "Uzbek");
+		languageNames.put(371, "Anglo_Norman");
+		languageNames.put(372, "Bainouk_Gunyaamolo");
+		languageNames.put(373, "Greek_Ancient_Egypt");
+		languageNames.put(374, "Malagasy");
+		languageNames.put(375, "Tsimihety_Malagasy");
+		return languageNames.get(i);
 	}
 
 
