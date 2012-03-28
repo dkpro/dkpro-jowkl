@@ -1,9 +1,10 @@
 #summary How to JOWKL
 
-= Introduction =
+== Introduction ==
 !OmegaWiki is a free, multilingual lexical semantic resource built around the concept of multilingual Synsets. Although this resource is interesting for NLP applications, the only way to access it so far has been the website http://www.omegawiki.org. For large-scale NLP tasks, efficient programmatic access to the knowledge therein is required. The !OmegeWiki API provides structured access to all information in this resource like definitions, translations and semantic relations.
 
-= Database dumps =
+== Database dumps ==
+
 
 = Setting up JOWKL =
 
