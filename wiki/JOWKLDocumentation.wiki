@@ -16,5 +16,39 @@ For using JOWKL in your own Java project you have to integrate it into you proje
 Here is a code snippet that shows how information can be obtained from !OmegaWiki using the API.
 
 {{{
-
+//Set up the database
+String ow_host = "bender.ukp.informatik.tu-darmstadt.de";
+String ow_db = "OmegaWiki";
+String ow_user = "student";
+String ow_pass = "student";
+String db_driver = "com.mysql.jdbc.Driver";
+String db_vendor = "mysql";
+int ow_language= OWLanguage.English;
+DatabaseConfiguration dbConfig_ow = new DatabaseConfiguration(ow_host,ow_db,db_driver,db_vendor, ow_user, ow_pass, ow_language);
+//Create the OmegaWiki object
+OmegaWiki ow = new OmegaWiki(dbConfig_ow);
+//Retrieve all senses for the English word "table
+Set<DefinedMeaning> meanings = ow.getDefinedMeaningByWord("table", ow_language);
+//For all senses...
+for(DefinedMeaning dm : meanings)
+{
+	//Retrieve the English definitions
+	Set<TranslatedContent> glosses = dm.getGlosses(ow_language);
+	for (TranslatedContent tc : glosses)
+	{
+		System.out.println("Definiton: "+tc.getGloss());
+	}
+	//Retrieve the translation into German
+	Set<SynTrans> translations = dm.getSynTranses(OWLanguage.German);
+	for (SynTrans st :translations)
+	{
+		System.out.println("Translation: "+ st.getSyntrans().getSpelling());
+	}
+	//Retrieve the hypernyms
+	Set<DefinedMeaning> links = dm.getDefinedMeaningLinks(DefinedMeaningLinkType.broader_terms);
+	for (DefinedMeaning dm_target : links)
+	{
+		System.out.println("Hypernym: "+ dm_target.getSpelling());
+	}
+}
 }}}
