@@ -38,17 +38,17 @@ for(DefinedMeaning dm : meanings)
 	{
 		System.out.println("Definiton: "+tc.getGloss());
 	}
-	//Retrieve the translation into German
-	Set<SynTrans> translations = dm.getSynTranses(OWLanguage.German);
+	//Retrieve the translation for all languages
+	Set<SynTrans> translations = dm.getSynTranses();
 	for (SynTrans st :translations)
 	{
-		System.out.println("Translation: "+ st.getSyntrans().getSpelling());
+		System.out.println(OWLanguage.getName(st.getSyntrans().getLanguageId()) + " translation: "+ st.getSyntrans().getSpelling());
 	}
-	//Retrieve the hypernyms
-	Set<DefinedMeaning> links = dm.getDefinedMeaningLinks(DefinedMeaningLinkType.broader_terms);
-	for (DefinedMeaning dm_target : links)
+	//Retrieve relations to other senses
+	Map<DefinedMeaning,Integer> links = dm.getDefinedMeaningLinksAll();
+	for (DefinedMeaning dm_target : links.keySet())
 	{
-		System.out.println("Hypernym: "+ dm_target.getSpelling());
+		System.out.println(DefinedMeaningLinkType.getName(links.get(dm_target))+" relation with target "+ dm_target.getSpelling());
 	}
 }
 }}}
