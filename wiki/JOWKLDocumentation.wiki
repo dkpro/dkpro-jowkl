@@ -9,7 +9,7 @@ To use the !OmegaWiki API, you first have the obtain the `Lexical data dump` des
 
 == Setting up JOWKL ==
 
-For using JOWKL in your own Java project you have to integrate it into you project using the Maven dependency. You don't have to download anything manually. See the [DeveloperTutorial Developer Setup] page for further information. 
+For using JOWKL in your own Java project you have to integrate it into your project using the Maven dependency. You don't have to download anything manually. See the [DeveloperTutorial Developer Setup] page for further information. 
 
 == Code Examples ==
 
