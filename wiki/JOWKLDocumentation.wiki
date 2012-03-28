@@ -5,7 +5,16 @@
 
 == Database dumps ==
 
+To use the !OmegaWiki API, you first have the obtain the `Lexical data dump` described at http://www.omegawiki.org/Help:Downloading_the_data#SQL_Database_dump and import it into a local database. That's it, no further preprocessing is necessary. We tested it on MySQL only, however, it should also work on other database systems.
 
-= Setting up JOWKL =
+== Setting up JOWKL ==
+
+For using JOWKL in your own Java project you have to integrate it into you project using the Maven dependency. You don't have to download anything manually. See the Developer Setup page for further information. 
 
 = Code Examples =
+
+Here is a code snippet that shows how information can be obtained from !OmegaWiki using the API.
+
+{{{
+
+}}}
