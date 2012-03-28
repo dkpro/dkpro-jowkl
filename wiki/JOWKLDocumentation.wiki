@@ -17,11 +17,11 @@ Here is a code snippet that shows how information can be obtained from !OmegaWik
 
 {{{
 //Set up the database
-String ow_host = "bender.ukp.informatik.tu-darmstadt.de";
-String ow_db = "OmegaWiki";
-String ow_user = "student";
-String ow_pass = "student";
-String db_driver = "com.mysql.jdbc.Driver";
+String ow_host = "localhost";
+String ow_db = "OmegaWikiDB";
+String ow_user = "user";
+String ow_pass = "pwd";
+String db_driver = "com.mysql.jdbc.Driver"; //just an example, other drivers should work too
 String db_vendor = "mysql";
 int ow_language= OWLanguage.English;
 DatabaseConfiguration dbConfig_ow = new DatabaseConfiguration(ow_host,ow_db,db_driver,db_vendor, ow_user, ow_pass, ow_language);
