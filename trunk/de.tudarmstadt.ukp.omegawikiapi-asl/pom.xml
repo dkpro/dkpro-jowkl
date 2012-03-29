@@ -24,7 +24,7 @@
 	</parent>
 	<groupId>de.tudarmstadt.ukp.omegawikiapi</groupId>
 	<artifactId>de.tudarmstadt.ukp.omegawikiapi-asl</artifactId>
-	<version>0.2.0</version>
+	<version>0.3.0-SNAPSHOT</version>
 	<name>OmegaWikiAPI</name>
 	<description>This is an API for accessing OmegaWiki Database dumps</description>
 	<dependencies>
@@ -44,8 +44,8 @@
 		</dependency>
 	</dependencies>
 	<scm>
-		<connection>http://jowkl.googlecode.com/svn/tags/de.tudarmstadt.ukp.omegawikiapi-asl-0.2.0</connection>
-		<developerConnection>scm:svn:https://jowkl.googlecode.com/svn/tags/de.tudarmstadt.ukp.omegawikiapi-asl-0.2.0</developerConnection>
-		<url>http://code.google.com/p/jowkl/source/browse/tags/de.tudarmstadt.ukp.omegawikiapi-asl-0.2.0</url>
+		<connection>http://jowkl.googlecode.com/svn/trunk/</connection>
+		<developerConnection>scm:svn:https://jowkl.googlecode.com/svn/trunk/</developerConnection>
+		<url>http://code.google.com/p/jowkl/source/browse/trunk</url>
 	</scm>
 </project>
