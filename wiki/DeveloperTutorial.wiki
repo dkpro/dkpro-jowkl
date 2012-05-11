@@ -1,8 +1,20 @@
-#summary Setting up Maven and Eclipse for JOWKL development
+#summary Setting up Eclipse and Maven for JOWKL development
+
+= Eclipse Setup =
+
+We use the following tools for development:
+
+ * [http://eclipse.org/ Eclipse] 3.7 or higher. We recommend the Eclipse Classic distribution.
+ * [http://subclipse.tigris.org/ Subclipse] 1.6.x
+   * update site: http://subclipse.tigris.org/update_1.6.x 
+ * [http://m2eclipse.sonatype.org/ m2e] 1.0.100.20110804-1717 or higher.
+   *  update site: http://m2eclipse.sonatype.org/sites/m2e 
+ * Maven SCM handler for Subclipse
+   *  update site: http://m2eclipse.sonatype.org/sites/m2e-extras
 
 = Maven Setup =
 
-We have set up a public Maven repository which provides the library `de.tudarmstadt.ukp.omegawikiapi-asl` which is needed to use JOWL in your project. To use this repository, we suggest you use the settings.xml in the hidden subdirectory .m2 of your home directory and augment it with the following sections:
+This projects makes use of some libraries that are not readily available in public Maven repositories. Therefore we have set up a Maven repository which provides these libraries as well as releases of this project. To use this repository, we suggest you use the settings.xml in the hidden subdirectory .m2 of your home directory and augment it with the following sections:
 
 {{{
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
@@ -11,81 +23,78 @@ We have set up a public Maven repository which provides the library `de.tudarmst
                       http://maven.apache.org/xsd/settings-1.0.0.xsd">
   <profiles>
     <profile>
-      <id>ukp-oss</id>
+      <id>ukp-oss-releases</id>
       <repositories>
         <repository>
-          <id>ukp-oss</id>
-          <url>http://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/repo/</url>
+          <id>ukp-oss-releases</id>
+          <url>http://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-releases</url>
           <releases>
             <enabled>true</enabled>
             <updatePolicy>never</updatePolicy>
             <checksumPolicy>warn</checksumPolicy>
           </releases>
           <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>daily</updatePolicy>
-            <checksumPolicy>warn</checksumPolicy>
+            <enabled>false</enabled>
           </snapshots>
         </repository>
       </repositories>
       <pluginRepositories>
         <pluginRepository>
-          <id>ukp-oss</id>
-          <url>http://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/repo/</url>
+          <id>ukp-oss-releases</id>
+          <url>http://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-releases</url>
           <releases>
             <enabled>true</enabled>
             <updatePolicy>never</updatePolicy>
             <checksumPolicy>warn</checksumPolicy>
           </releases>
           <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>daily</updatePolicy>
-            <checksumPolicy>warn</checksumPolicy>
+            <enabled>false</enabled>
           </snapshots>
         </pluginRepository>
       </pluginRepositories>
     </profile>
+    <profile>
+      <id>ukp-oss-snapshots</id>
+      <repositories>
+        <repository>
+          <id>ukp-oss-snapshots</id>
+          <url>http://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-snapshots</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
   </profiles>
   <activeProfiles>
-    <activeProfile>ukp-oss</activeProfile>
+    <activeProfile>ukp-oss-releases</activeProfile>
+    <!-- Uncomment the following entry if you need SNAPSHOT versions. -->
+    <!--activeProfile>ukp-oss-snapshots</activeProfile-->
   </activeProfiles>
 </settings>
-}}}
+}}}  
 
-= Eclipse Setup =
-
-We use the following tools for development:
-
- * [http://eclipse.org/ Eclipse] 3.5 or higher. We recommend the Eclipse Classic distribution.
- * [http://subclipse.tigris.org/ Subclipse] 1.6.x
-   * update site: http://subclipse.tigris.org/update_1.6.x 
- * [http://m2eclipse.sonatype.org/ m2eclipse] 0.10.0 or higher.
-   *  update site: http://m2eclipse.sonatype.org/sites/m2e 
- * Maven SCM handler for Subclipse
-   *  update site: http://m2eclipse.sonatype.org/sites/m2e-extras 
-
-== For Windows Users ==
-
-*Note:* On your machine the Java path may be different, e.g. because you are using a localized Windows version it may be C:\Programme\... -or- because you may have a Java version other than 1.6.0.01.
-
- # Edit your eclipse.ini and add/change the following lines (the -vmargs line should be present already):
- {{{
-    -vm
-    C:/Program Files/Java/jdk1.6.0_01/bin/javaw.exe
-    -vmargs
-}}}
-   * Make sure that the linebreaks are as shown above (the formatting is actually necessary) 
- # Open Eclipse
-   * Open the preferences
-   * Go to Java -> Installed JREs
-   * Click Search and choose your Java directory
-   * Close the preferences and re-open them
-   * Select jdk1.6.0_01 as your JRE (this should match the entry you added in the eclipse.ini) 
+If you do not have _settings.xml_ file in your _.m2_ directory, just create one with exactly the same content as above. You can also use the _settings.xml_ provided in [http://code.google.com/p/uby/downloads/list Downloads section] and copy it to your _.m2_ folder.
 
 = Checking out =
 
  * Open the *SVN Repositories perspective* in Eclipse (Menu -> Window -> Show View -> Other... -> SVN -> SVN Repositories)
- * *Add* a SVN repository with the URL http://jowkl.googlecode.com/svn/de.tudarmstadt.ukp.omegawiki-asl
+ * *Add* a SVN repository with the URL http://uby.googlecode.com/svn/de.tudarmstadt.ukp.uby
  * *Expand* the new repository node in the SVN Repositories view
  * Right-click on *trunk* and select *Check out as Maven project*
+   * Note: if you do not see this menu item, make sure you have installed the Maven SCM handler for Subclipse. 
+ * (optional) Eclipse will create some of projects now. We recommend to group these projects into a working set:
+   * Select *Next*
+   * Check *Add project(s) to working set*
+   * Click *More...*
+   * Click *New...*
+   * Double-click *Java*
+   * Enter the working set name Uby
+   * Click *Finish*
+   * Click *OK*
+   * Select the working set Uby from the working set drop-down box
+   * *Note:* when you are completely through with these and the following steps, remember to go to the Package Explorer view. There is a small triangular icon in its top right corner. Click on that and select Top Level Elements -> Working Sets. 
  * Click *Finish.* 
