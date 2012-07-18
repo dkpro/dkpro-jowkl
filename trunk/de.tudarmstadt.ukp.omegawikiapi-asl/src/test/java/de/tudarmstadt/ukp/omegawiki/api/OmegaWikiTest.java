@@ -94,6 +94,7 @@ public class OmegaWikiTest extends TestCase {
 
 	public void testGetDefinedMeaning() throws OmegaWikiException, UnsupportedEncodingException {
 		DefinedMeaning dm = ow.getDefinedMeaningById(482);
+		@SuppressWarnings("unused")
 		Iterator<TranslatedContent> glosses = dm.getGlosses(OWLanguage.English).iterator();
 		//System.out.println(dm.getSpelling().getSpelling());
 	/*System.out.println("---Annotations---");
