@@ -626,9 +626,8 @@ public class DefinedMeaning implements AnnotatableUnits{
 			{
 
 				String name="";
-				String value="";
 				name= new String(rs.getBytes("type_spelling"),"UTF-8");
-				value= new String(rs.getBytes("value_spelling"),"UTF-8");
+				new String(rs.getBytes("value_spelling"),"UTF-8");
 				if(name.equals("subject")) {
 					dummy=new DefinedMeaning(rs.getInt("id2"),this.dbStatements);
 				}
