@@ -2,13 +2,13 @@
  * Copyright 2012
  * Ubiquitous Knowledge Processing (UKP) Lab
  * Technische Universität Darmstadt
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -36,6 +36,24 @@ public class OmegaWikiTest extends TestCase {
 				"OmegaWiki","com.mysql.jdbc.Driver","mysql", "student", "student", OWLanguage.English);
 		ow = new OmegaWiki(dc);
 	};
+
+	public void testPOS() throws OmegaWikiException, UnsupportedEncodingException {
+		Set<DefinedMeaning> senses = ow.getDefinedMeaningByWord("break",OWLanguage.English);
+		for (DefinedMeaning dm :senses )
+		{
+				for (SynTrans st : dm.getSynTranses())
+				{
+					for(Annotation anno : st.getAnnotations()) {
+						System.out.println(anno);
+					}
+				}
+		}
+
+
+
+		System.exit(0);
+	}
+
 
 	public void testGetAllExpressions() throws OmegaWikiException {
 		System.out.println(ow.getAllExpressions().size());
