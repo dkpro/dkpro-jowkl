@@ -10,10 +10,9 @@ title: "DKPro Core"
 #	title: DKPro Core
 #   image_fullwidth: "header_unsplash_12.jpg"
 header-1:
-    title: A collection of software components for natural language processing (NLP) based on the Apache UIMA framework.
+    title: Java OmegaWiki Library
     text: Many NLP tools are already freely available in the NLP research community. DKPro Core provides Apache UIMA components wrapping these tools (and some original tools) so they can be used interchangeably in UIMA processing pipelines. DKPro Core builds heavily on uimaFIT which allows for rapid and easy development of NLP processing pipelines, for wrapping existing tools and for creating original UIMA components.
 ---
-
 
 
 Publications and Citation Information
@@ -27,6 +26,7 @@ about JOWKL and UBY in our scientific articles:
   Translation: Computation, Corpora, Cognition: Special Issue on “Language 
   Technology for a Multilingual Europe” (TC3), Vol. 3(1): 87–118, June 2013.
   [(download)][3]
+
 > Iryna Gurevych, Judith Eckle-Kohler, Silvana Hartmann, Michael Matuschek, 
   Christian M. Meyer, and Christian Wirth: UBY – A Large-Scale Unified 
   Lexical-Semantic Resource Based on LMF, in: Proceedings of the 13th 
@@ -34,16 +34,23 @@ about JOWKL and UBY in our scientific articles:
   Linguistics (EACL), p. 580–590, April 2012. Avignon, France.
   [(download)][4]  
 
-  
-How to cite
------------
 
-Many of the wrapped third-party components and the models used by them should be cited individually. We currently do not provide a comprehensive overview over citable publications. We encourage you to track down citable publications for these dependencies. However, you might find pointers to some relevant publications in the Model overview of the DKPro Core release you are using or in the JavaDoc of individual components.
+License and Availability
+------------------------
 
-Please cite DKPro Core itself as:
+The latest version of DKPro JOWKL is available via Maven Central. 
+If you use Maven as your build tool, then you can add DKPro JOWKL 
+as a dependency in your pom.xml file:
 
-> Eckart de Castilho, R. and Gurevych, I. (2014). **A broad-coverage collection of portable NLP components for building shareable analysis pipelines**. In Proceedings of the Workshop on Open Infrastructures and Analysis Frameworks for HLT (OIAF4HLT) at COLING 2014, to be published, Dublin, Ireland.
-[(pdf)][1] [(bib)][2]
+		<dependency>
+		  <groupId>org.dkpro.jowkl</groupId>
+		  <artifactId>dkpro-jowkl</artifactId>
+		  <version>1.0.0</version>
+		</dependency>
+
+DKPro JOWKL is available as open source software under the 
+[Apache License 2.0 (ASL)][5]. The software thus comes "as is" without any 
+warranty (see license text for more details).
 
 License
 -------
