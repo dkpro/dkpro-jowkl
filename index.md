@@ -11,7 +11,7 @@ title: "DKPro Core"
 #   image_fullwidth: "header_unsplash_12.jpg"
 header-1:
     title: Java OmegaWiki Library
-    text: A free, Java-based application programming interface that allows to access all information in the free, multi-lingual online dictionary. ... Many NLP tools are already freely available in the NLP research community. DKPro Core provides Apache UIMA components wrapping these tools (and some original tools) so they can be used interchangeably in UIMA processing pipelines. DKPro Core builds heavily on uimaFIT which allows for rapid and easy development of NLP processing pipelines, for wrapping existing tools and for creating original UIMA components.
+    text: A free, Java-based application programming interface that allows to access all information in the free, multi-lingual online dictionary. Core features: fast and efficient access to ... Many NLP tools are already freely available in the NLP research community. DKPro Core provides Apache UIMA components wrapping these tools (and some original tools) so they can be used interchangeably in UIMA processing pipelines. DKPro Core builds heavily on uimaFIT which allows for rapid and easy development of NLP processing pipelines, for wrapping existing tools and for creating original UIMA components.
 ---
 
 

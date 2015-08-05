@@ -44,6 +44,6 @@
 #  - title: "Contributors"
 #    url: "http://github.com/dkpro/dkpro-core/blob/master/CONTRIBUTORS.txt"
 
-- title: "About"
-  side: left
-  url: "/info"
+#- title: "About"
+#  side: left
+#  url: "/info"
