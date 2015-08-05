@@ -11,7 +11,7 @@ title: "DKPro JOWKL"
 #   image_fullwidth: "header_unsplash_12.jpg"
 header-1:
     title: Java OmegaWiki Library
-    text: A free, Java-based application programming interface that allows to access all information in the free, multi-lingual online dictionary [OmegaWiki][1]. Core features: fast and efficient access to OmegaWiki, direct access to OmegaWiki database dumps, no preprocessing necessary, language independent.
+    text: A free, Java-based application programming interface that allows to access all information in the free, multi-lingual online dictionary. Core features: fast and efficient access to OmegaWiki, direct access to OmegaWiki database dumps, no preprocessing necessary, language independent.
 
 ---
 
