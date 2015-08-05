@@ -10,9 +10,9 @@
   url: "http://search.maven.org/#search|ga|1|a%3A%22dkpro-jowkl%22"
   side: left
 
-#- title: Documentation
-#  url: "/documentation/"
-#  side: left
+- title: Documentation
+  url: "/documentation/"
+  side: left
 #  dropdown:
 #  - title: "Components"
 #    url: "/components/"
