@@ -21,7 +21,7 @@
 
     <groupId>org.dkpro.jowkl</groupId>
     <artifactId>dkpro-jowkl</artifactId>
-    <version>0.3.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>Java OmegaWiki Library (JOWKL)</name>
     <url>http://dkpro.org/jowkl/</url>
@@ -50,7 +50,7 @@
         <connection>scm:git:git://github.com/dkpro/dkpro-jowkl</connection>
         <developerConnection>scm:git:git@github.com:dkpro/dkpro-jowkl.git</developerConnection>
         <url>https://github.com/dkpro/dkpro-jowkl</url>
-        <tag>head</tag>
+        <tag>dkpro-jowkl-1.0.0</tag>
     </scm>
 
     <profiles>
