@@ -42,11 +42,11 @@ The latest version of DKPro JOWKL is available via Maven Central.
 If you use Maven as your build tool, then you can add DKPro JOWKL 
 as a dependency in your pom.xml file:
 
-    <dependency>
-       <groupId>org.dkpro.jowkl</groupId>
-       <artifactId>dkpro-jowkl</artifactId>
-       <version>1.0.0</version>
-    </dependency>
+		<dependency>
+		  <groupId>org.dkpro.jowkl</groupId>
+		  <artifactId>dkpro-jowkl</artifactId>
+		  <version>1.0.0</version>
+		</dependency>
 
 DKPro JOWKL is available as open source software under the 
 [Apache License 2.0 (ASL)][5]. The software thus comes "as is" without any 
