@@ -52,35 +52,24 @@ DKPro JOWKL is available as open source software under the
 [Apache License 2.0 (ASL)][5]. The software thus comes "as is" without any 
 warranty (see license text for more details).
 
-License
--------
 
-All components in DKPro Core ASL are licensed under the [Apache Software License (ASL) version 2][3] - but their dependencies may not be:
+About DKPro JOWKL
+-----------------
 
-**IMPORTANT LICENSE NOTE** - It must be pointed out that while the component's source code itself is licensed under the ASL, individual components might make use of third-party libraries or products that are not licensed under the ASL, such as LGPL libraries or libraries which are free for research but may not be used in commercial scenarios. Please be aware of the third party licenses and respect them.
+Prior to being available as open source software, DKPro JOWKL has been 
+a research project at the Ubiquitous Knowledge Processing (UKP) Lab of 
+the Technische Universität Darmstadt, Germany. The following people have 
+mainly contributed to this project (in alphabetical order):
 
-About DKPro Core
-----------------
+* Richard Eckart de Castilho
+* Iryna Gurevych
+* Zijad Maksuti
+* Michael Matuschek
+* Christian M. Meyer
 
-This project was initiated by the Ubiquitous Knowledge Processing Lab (UKP) at the Technische Universität Darmstadt, Germany under the auspices of Prof. Dr. Iryna Gurevych.
 
-It is now jointly developed at UKP Lab, Technische Universität Darmstadt and Language Technology Lab, Universität Duisburg-Essen.
-
-
-<span class="footnotes">**Image sources**: [LogoJava.png][4] by Christian F. Burprich, Creative Commons (Attribution-Noncommercial-Share Alike 3.0 Unported), color changed; [LogoPython.png][5] by IFA; [LogoGroovy.png][6] by pictonic.co; [IconComponents.png][7], [IconModels.png][8] by [Visual Pharm][9]; [IconFormatText.png][10], [IconFormatBlank.png][11] by [Honza Dousek][12]; [IconTypeSystem.png][13] by Designmodo</span>
-
-[1]: https://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_UKP/OIAF4HLT2014DKProCore_cameraready.pdf
-[2]: https://www.ukp.tu-darmstadt.de/publications/details/?no_cache=1&tx_bibtex_pi1%5Bpub_id%5D=TUD-CS-2014-0864&type=99&tx_bibtex_pi1%5Bbibtex%5D=yes
-[3]: http://www.apache.org/licenses/LICENSE-2.0
-[4]: https://www.iconfinder.com/icons/16890/java_icon#size=128
-[5]: https://www.iconfinder.com/icons/282803/logo_python_icon#size=128
-[6]: http://findicons.com/icon/576242/pl_groovy_02?id=576242
-[7]: https://www.iconfinder.com/icons/175334/services_icon#size=128
-[8]: https://www.iconfinder.com/icons/174880/database_icon#size=128
-[9]: http://icons8.com/
-[10]: https://www.iconfinder.com/icons/199323/extension_file_format_txt_icon#size=128
-[11]: https://www.iconfinder.com/icons/199231/blank_extension_file_format_icon#size=128
-[12]: https://www.iconfinder.com/iconsets/lexter-flat-colorfull-file-formats
-[13]: https://www.iconfinder.com/icons/115791/tag_icon#size=128
-[14]: http://uima.apache.org
-[15]: http://uima.apache.org/uimafit
+[1]: http://www.omegawiki.org/
+[2]: http://www.ukp.informatik.tu-darmstadt.de/uby/
+[3]: http://www.t-c3.org/index.php/t-c3/article/view/20
+[4]: http://www.aclweb.org/anthology/E/E12/E12-1059.pdf
+[5]: http://www.apache.org/licenses/LICENSE-2.0
