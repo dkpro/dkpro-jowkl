@@ -7,5 +7,7 @@ permalink: "/mailinglists/"
 Subscribe to our mailing lists below:
 
 * [Users mailing list](http://groups.google.com/group/jowkl-users)
-#* [Developers mailing list](http://groups.google.com/group/dkpro-core-developers)
+<!--
+* [Developers mailing list](http://groups.google.com/group/dkpro-core-developers)
+-->
 * [Commits](http://groups.google.com/group/jowkl-commit)
