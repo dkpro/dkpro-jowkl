@@ -10,8 +10,9 @@ title: "DKPro JOWKL"
 #	title: DKPro Core
 #   image_fullwidth: "header_unsplash_12.jpg"
 header-1:
-    title: Java OmegaWiki Library
-    text: A free, Java-based application programming interface that allows to access all information in the free, multi-lingual online dictionary [OmegaWiki][1]. Core features: fast and efficient access to OmegaWiki, direct access to OmegaWiki database dumps, no preprocessing necessary, language independent.
+    title: DKPro JOWKL (Java OmegaWiki Library)
+    text: A free, Java-based application programming interface that allows to access all information in the free,
+multi-lingual online dictionary [OmegaWiki][1]. Core features: fast and efficient access to OmegaWiki, direct access to OmegaWiki database dumps, no preprocessing necessary, language independent.
 
 ---
 
@@ -42,11 +43,11 @@ The latest version of DKPro JOWKL is available via Maven Central.
 If you use Maven as your build tool, then you can add DKPro JOWKL 
 as a dependency in your pom.xml file:
 
-    <dependency>
-       <groupId>org.dkpro.jowkl</groupId>
-       <artifactId>dkpro-jowkl</artifactId>
-       <version>1.0.0</version>
-    </dependency>
+<dependency>
+   <groupId>org.dkpro.jowkl</groupId>
+   <artifactId>dkpro-jowkl</artifactId>
+   <version>1.0.0</version>
+</dependency>
 
 DKPro JOWKL is available as open source software under the 
 [Apache License 2.0 (ASL)][5]. The software thus comes "as is" without any 
