@@ -23,7 +23,7 @@
     <artifactId>dkpro-jowkl</artifactId>
     <version>0.3.0-SNAPSHOT</version>
 
-    <name>Java OmegaWiki Library</name>
+    <name>Java OmegaWiki Library (JOWKL)</name>
     <url>http://dkpro.org/jowkl/</url>
     <description>DKPro JOWKL is an API for accessing OmegaWiki database dumps</description>
 
@@ -53,20 +53,6 @@
         <tag>head</tag>
     </scm>
 
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.10</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.18</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
     <profiles>
         <profile>
             <id>rat-check</id>
