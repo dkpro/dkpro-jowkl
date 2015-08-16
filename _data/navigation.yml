@@ -1,5 +1,5 @@
 - title: DKPro
-  url: "http://dkpro.github.io"
+  url: "https://dkpro.github.io"
   side: left
 
 - title: JOWKL
@@ -20,8 +20,8 @@
 #    url: "/models/"
 #  - title: "Formats"
 #    url: "/formats/"
-#  - title: "Typesystem"
-#    url: "/typesystem/"
+#  - title: "Javadoc"
+#    url: "/releases/!LATEST!/apidocs/index.html"
 
 - title: "Issues"
   url: "http://github.com/dkpro/dkpro-jowkl/issues"

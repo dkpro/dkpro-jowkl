@@ -5,15 +5,13 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-title: "DKPro Core"
-#header:
-#	title: DKPro Core
-#   image_fullwidth: "header_unsplash_12.jpg"
-header-1:
-    title: "Java OmegaWiki Library"
-    text: "A free, Java-based application programming interface that allows to access all information in the free, multi-lingual online dictionary. Core features: fast and efficient access to OmegaWiki, direct access to OmegaWiki database dumps, no preprocessing necessary, language independent."
+title: "DKPro JOWKL"  
 ---
 
+Java OmegaWiki Library
+----------------------
+
+A free, Java-based application programming interface that allows to access all information in the free, multi-lingual online dictionary. Core features: fast and efficient access to OmegaWiki, direct access to OmegaWiki database dumps, no preprocessing necessary, language independent.
 
 Publications and Citation Information
 -------------------------------------
