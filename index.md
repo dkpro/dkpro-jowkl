@@ -11,7 +11,15 @@ title: "DKPro JOWKL"
 Java OmegaWiki Library
 ----------------------
 
-A free, Java-based application programming interface that allows to access all information in the free, multi-lingual online dictionary. Core features: fast and efficient access to OmegaWiki, direct access to OmegaWiki database dumps, no preprocessing necessary, language independent.
+A free, Java-based application programming interface that allows to access 
+all information in the free, multi-lingual online dictionary [OmegaWiki][1]. 
+
+Core features:
+* fast and efficient access to OmegaWiki,
+* direct access to OmegaWiki database dumps,
+* no preprocessing necessary,
+* language independent.
+
 
 Publications and Citation Information
 -------------------------------------
@@ -31,6 +39,8 @@ about JOWKL and UBY in our scientific articles:
   Conference of the European Chapter of the Association for Computational 
   Linguistics (EACL), p. 580–590, April 2012. Avignon, France.
   [(download)][4]  
+
+Please cite our TC3 paper if you use the software in your scientific work. 
 
 
 License and Availability

@@ -31,6 +31,7 @@ Code Examples
 
 Here is a code snippet that shows how information can be obtained from OmegaWiki using the API.
 
+{% highlight java %}
 	//Set up the database
 	String ow_host = "localhost";
 	String ow_db = "OmegaWikiDB";
@@ -66,3 +67,4 @@ Here is a code snippet that shows how information can be obtained from OmegaWiki
 			System.out.println(DefinedMeaningLinkType.getName(links.get(dm_target))+" relation with target "+ dm_target.getSpelling());
 		}
 	}
+{% endhighlight %}
