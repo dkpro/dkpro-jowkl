@@ -28,8 +28,8 @@
     <description>DKPro JOWKL is an API for accessing OmegaWiki database dumps</description>
 
     <organization>
-        <name>Ubiquitous Knowledge Processing (UKP) Lab</name>
-        <url>http://www.ukp.tu-darmstadt.de/</url>
+        <name>Ubiquitous Knowledge Processing (UKP) Lab, Technische Universität Darmstadt</name>
+        <url>https://www.ukp.tu-darmstadt.de/</url>
     </organization>
 
     <licenses>
@@ -124,4 +124,8 @@
             </extension>
         </extensions>
     </build>
+    <issueManagement>
+    	<system>GitHub</system>
+    	<url>https://github.com/dkpro/dkpro-jowkl/issues</url>
+    </issueManagement>
 </project>
