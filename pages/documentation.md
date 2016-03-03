@@ -12,7 +12,7 @@ OmegaWiki is a free, multilingual lexical semantic resource built around the con
 Database dumps
 --------------
 
-To use the OmegaWiki API, you first have the obtain the `Lexical data dump` described at <http://www.omegawiki.org/Help:Downloading_the_data#SQL_Database_dump> and import it into a local database. That's it, no further preprocessing is necessary. We tested it on MySQL only, however, it should also work on other database systems.
+To use the OmegaWiki API, you first have the obtain the 'Lexical data dump' described at <http://www.omegawiki.org/Help:Downloading_the_data#SQL_Database_dump> and import it into a local database. That's it, no further preprocessing is necessary. We tested it on MySQL only, however, it should also work on other database systems.
 
 Setting up JOWKL
 ----------------
