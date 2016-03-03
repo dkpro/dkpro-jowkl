@@ -1,0 +1,8 @@
+# Project releases
+#
+# Possible status: "stable", "unstable"
+#
+# 
+- version: 1.0.0
+  date: 2015-08-05
+  status: stable
