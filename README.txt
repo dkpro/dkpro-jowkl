@@ -64,6 +64,5 @@ mainly contributed to this project (in alphabetical order):
 
 Project Homepage
 ----------------
-* http://dkpro.org/dkpro-jowkl/
 * https://github.com/dkpro/dkpro-jowkl/
 * https://www.ukp.tu-darmstadt.de/software/jowkl/
