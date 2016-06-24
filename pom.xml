@@ -24,7 +24,7 @@
     <version>1.1.0-SNAPSHOT</version>
 
     <name>Java OmegaWiki Library (JOWKL)</name>
-    <url>http://dkpro.org/jowkl/</url>
+    <url>https://dkpro.github.io/dkpro-jowkl</url>
     <description>DKPro JOWKL is an API for accessing OmegaWiki database dumps</description>
 
     <organization>
